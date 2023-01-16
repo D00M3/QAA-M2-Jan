@@ -39,3 +39,12 @@ fav_number = int(input("Please enter fav num: "))
 print(fav_number + 1)
 
 print(decorations)
+
+drink_name = "John"
+drink_type = "Flat White"
+# Converting from "True" to True (boolean)
+whipped_cream = bool(input("Do you want whipped cream? "))
+quantity = int("2")
+
+order = f"Name: {drink_name}, type: {drink_type}, whipped cream: {whipped_cream}, quantity: {quantity}"
+print(order)
