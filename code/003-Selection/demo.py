@@ -65,3 +65,14 @@ if num_cond > 10 or bool_cond == True:
     print("Num is either greater than 10 or bool is true, or they are both true")
     if num_cond < 10:
         print("bool is true")
+
+num = 12
+
+if num < 12:
+    print("num is less than 12")
+
+if num <= 12:
+    print("Num is less than OR equal to 12")
+
+import math
+math.sqrt(num)
