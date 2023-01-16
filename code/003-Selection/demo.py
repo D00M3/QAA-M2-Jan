@@ -48,3 +48,20 @@ if test_false == False:
 
 if not test_false:
     print("It is false")
+
+
+# Multiple conditions using AND OR
+# AND cond_1 as well as cond_2 must be true
+# OR either cond_1, cond_2 must be true (as well as both being true)
+
+num_cond = 5
+bool_cond = True
+word_cond = "yellow"
+
+if (num_cond > 10 and bool_cond == True) or word_cond == "yellow":
+    print("Num is greater than 10 and bool is true")
+
+if num_cond > 10 or bool_cond == True:
+    print("Num is either greater than 10 or bool is true, or they are both true")
+    if num_cond < 10:
+        print("bool is true")
