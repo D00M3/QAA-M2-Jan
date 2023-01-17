@@ -9,3 +9,6 @@ for data in strData:
     numData.append(number)
 
 print(numData)
+
+print(min(numData)) # 14
+print(max(numData)) # 100
