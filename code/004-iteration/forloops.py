@@ -17,7 +17,13 @@ for y in range(40, -15, -7):
 for foobar in ["banana1", "banana2", "banana3", "banana4"]:
     print(f"Current banana is {foobar}")
 
+snippet = ""
 for num1 in range(5):
     # For every number in the loop loop through A, B, C, D
     for char1 in ["a", "b", "c", "d"]:
-        print(f"{num1} : {char1}")
+        result = f"{num1} : {char1}"
+        # print(result)
+        snippet = snippet + result
+
+print(snippet)
+
