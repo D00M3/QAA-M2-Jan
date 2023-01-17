@@ -36,3 +36,9 @@ size = "large"
 extras = "whipped cream"
 order = "{} ordered at size {} with {} added".format(drink, size, extras)
 print(order)
+
+print("*******************************************")
+
+str1 = "Hello World"
+str2 = str1.center(30, "*")
+print(str2)
