@@ -56,3 +56,5 @@ print(fruit)
 # print(fruit[2]) CAN'T INDEX IT
 print("pear" in fruit)
 print(len(fruit))
+
+# Break til 11:15 :)
