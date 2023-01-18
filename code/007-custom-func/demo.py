@@ -41,3 +41,6 @@ def sum(x, y):
 
 # print(private_var)
 print(sum(5, 10)) # equal to total
+
+var1 = "red"
+var2 = 10
