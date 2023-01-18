@@ -1,4 +1,5 @@
 'use strict'
+// Data type or type of variable
 
 // Looks for HTML elements by ID
 const textbox = document.querySelector("#textbox")
