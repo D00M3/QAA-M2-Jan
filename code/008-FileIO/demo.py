@@ -43,6 +43,13 @@ for order in orders_data:
 orders_file.close()
 
 # By default we open files in Read mode, open them in Append or Write
-drinks_file = open("drinks.txt", "a")
+drinks_file = open("drinks.txt", "a+")
 drinks_file.write("\nwater")
+drinks_data = drinks_file.readlines()
+print(drinks_data)
 drinks_file.close()
+
+# drinks_file = open("drinks.txt", "r")
+# drinks_data = drinks_file.readlines()
+# print(drinks_data)
+
