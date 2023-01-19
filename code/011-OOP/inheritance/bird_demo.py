@@ -32,3 +32,6 @@ eagle1 = eagle("grey", 98, "big freedom bird", 140)
 # Exercise - Create a parent class that has 2+ children passing down 3x attributes and 1 function
 # Child class should contain a __str__ which prints all attributes of this object
 # Create 1x object of each child class 
+
+# Stretch goal - Create an array of atleast 4 child objects (both types)
+# Loop through the array running your custom function and printing a variable
