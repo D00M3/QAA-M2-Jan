@@ -11,7 +11,12 @@ class cake:
     def bake(self):
         return "In the oven now!"
 
-cake1 = cake()
+# cake1 and cake 2 are our objects
+cake1 = cake() # make an object called cake1
+cake2 = cake()
+cake2.frosting = False
+print(cake2.frosting)
+
 print(cake1) # <__main__.cake object at 0x00000227D494E9D0>
 print(cake1.frosting) # Object Frosting - true
 print(cake.frosting) # Class frosting - True
