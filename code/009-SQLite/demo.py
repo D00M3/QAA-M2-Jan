@@ -33,14 +33,13 @@ def updateChocFlavour(id, value):
 addChoc()
 updateChocFlavour(2, "latte")
 
-choc_data = runQuery("SELECT * FROM chocolate")
-
-for choc in choc_data:
-    print(choc)
-    print(choc[1])
+ 
 
 # Run some type of query 
 # query_str = "SELECT * FROM sqlite_schema;"
 # db_data = cursor.execute(query_str).fetchall()
 # print(db_data)
+
+# Saving the data into the db created via cursor stuff
+conn.commit()
 
