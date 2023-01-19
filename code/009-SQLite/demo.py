@@ -11,14 +11,27 @@ conn = sql.connect("choc-db")
 cursor = conn.cursor()
 
 # Python is reading our sql file and saving a String of content
-sql_file = open("chocolate.sql")
-sql_string = sql_file.read()
+# sql_file = open("chocolate.sql")
+# sql_string = sql_file.read()
 # Python is running this SQL string inside of our DB 
 # cursor.executescript(sql_string)
 
 def runQuery(query):
     data = cursor.execute(query).fetchall()
     return data
+
+def addChoc():
+    insert_str = "INSERT INTO chocolate (flavour, weight_gr, fairtrade) VALUES ('Pistachio', 67, true);"
+    runQuery(insert_str)
+    return True
+
+def updateChocFlavour(id, value):
+    update_query = f"UPDATE chocolate SET flavour = '{value}' WHERE choc_id = {id}"
+    runQuery(update_query)
+    return True
+
+addChoc()
+updateChocFlavour(2, "latte")
 
 choc_data = runQuery("SELECT * FROM chocolate")
 
@@ -30,3 +43,4 @@ for choc in choc_data:
 # query_str = "SELECT * FROM sqlite_schema;"
 # db_data = cursor.execute(query_str).fetchall()
 # print(db_data)
+
