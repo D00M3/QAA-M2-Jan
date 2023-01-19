@@ -27,11 +27,25 @@ class eagle(bird):
         super().__init__(feather_colour, wingspan, type)
         self.fly_speed = fly_speed
 
+    def __str__(self):
+        return f"feather colour: {self.feather_colour}"
+
 eagle1 = eagle("grey", 98, "big freedom bird", 140)
+penguin2 = penguin("grey", 12, "bit warmer penguin", 43)
+eagle2 = eagle("gold", 32, "golden bird", 90)
+
+bird_list = [penguin1, penguin2, eagle1, eagle2]
+print(bird_list)
+print(eagle1)
+print(bird_list[2])
+
+for bird in bird_list:
+    print(bird)
+    print(bird.noise())
 
 # Exercise - Create a parent class that has 2+ children passing down 3x attributes and 1 function
 # Child class should contain a __str__ which prints all attributes of this object
 # Create 1x object of each child class 
 
-# Stretch goal - Create an array of atleast 4 child objects (both types)
+# Stretch goal - Create an array of atleast 4 objects from child classes
 # Loop through the array running your custom function and printing a variable
