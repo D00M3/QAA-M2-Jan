@@ -33,9 +33,15 @@ def search_query(search):
 @app.route("/movies/create", methods=['POST'])
 def createMovie():
     data = request.get_json()
-    print(data)
-    return "JSON Body accepted :) "
+    print(data['title']) # Populate and create objects
+    return data, 210
 
+class movie:
+
+    def __init__(self, title, rating, cast):
+        self.title = title
+        self.rating = rating
+        self.cast = cast
 
 # To run the app:
 if __name__ == "__main__":
