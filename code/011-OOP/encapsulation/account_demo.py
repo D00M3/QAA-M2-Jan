@@ -11,7 +11,7 @@ class bankAccount:
     _pin = "1234"
     _money = 500
 
-    def __init__(self, name, age):
+    def __init__(self, name, age,):
         self.name = name
         self.age = age
 
