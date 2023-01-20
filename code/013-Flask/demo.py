@@ -3,7 +3,7 @@
 # flask which
 
 # Importing Flask
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -18,10 +18,10 @@ def hello():
 def html():
     return "<h2> Hello World! </h2>"
 
-@app.route("/image")
+@app.route("/gif")
 def html_2():
     # return -> Outputting some data back to the browser
-    return "<img src='https://picsum.photos/200/300' alt='random pic'>"
+    return "<img src='https://picsum.photos/200' alt='random pic'>"
 
 # Url Query, Param queries, Body Requests
 @app.route("/query/<search>")
@@ -29,6 +29,12 @@ def search_query(search):
     # data = db.query("SELECT * FROM data")
     # return data
     return f"You have searched for {search}.. Sorry, no results :( "
+
+@app.route("/movies/create", methods=['POST'])
+def createMovie():
+    data = request.get_json()
+    print(data)
+    return "JSON Body accepted :) "
 
 
 # To run the app:
