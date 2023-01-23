@@ -26,6 +26,7 @@ def createPenguin(fish_eaten, dancing, name):
 def commitChanges():
     conn.commit()
 
+# Uncomment this and run the file once to set up the DB
 # setupTable()
 
 
