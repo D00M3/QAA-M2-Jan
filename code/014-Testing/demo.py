@@ -6,3 +6,5 @@ def add_hello_string(string):
     return new_string
 
 print(add_hello_string("world"))
+
+# Break til 11:05
