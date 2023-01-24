@@ -15,7 +15,7 @@ def runQuery(query):
 
 def viewAllRecords():
     query = "SELECT * FROM penguins;"
-    data = runQuery(query).fetchall()
+    data = runQuery(query)
     return data
 
 def createPenguin(fish_eaten, dancing, name):
